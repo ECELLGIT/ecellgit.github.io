@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Github portfolio's</title>
+		<link rel="stylesheet" type="text/css" href="css/boot.css">
+        <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">-->
+        <link rel="stylesheet" type="text/css" href="css/input.css">
+        <link rel="stylesheet" type="text/css" href="css/table1.css">
+        <!--<link href="css/table.css" rel="stylesheet" >-->
+
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+	<title>	Data table </title>
 </head>
 <body>
-
-
-
-<table  id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+<div class="container">
+	<table  id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
             <tr>
                 <th>Name</th>
-                <th>Position</th>
-                <th>Office</th>
-                <th>Age</th>
-                <th>Start date</th>
-                <th>Salary</th>
+                <th>Portfolio</th>
+                <th>Branch</th>
+                <th>Semester</th>
+                <th>E-mail ID</th>
+                <th>Linkedin</th>
             </tr>
         </thead>
         
         <tbody>
             <tr>
-                <td>Tiger Nixon</td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-                <td>61</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
+                <td>Jayraj Radadiya</td>
+                <td><a href="kakarotover9k.github.io">kakarotover9k.github.io</a></td>
+                <td>Information Technology</td>
+                <td>4 </td>
+                <td>radadiyajayu0001@gmail.com</td>
+                <td>-</td>
             </tr>
             <tr>
-                <td>Garrett Winters</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>63</td>
-                <td>2011/07/25</td>
-                <td>$170,750</td>
+                <td>Dhruvil Trivedi</td>
+                <td><a href="hackerforever.github.io">hackerforever.github.io</a></td>
+                <td>Information Technology</td>
+                <td>4</td>
+                <td>-</td>
+                <td>-</td>
             </tr>
             <tr>
-                <td>Ashton Cox</td>
-                <td>Junior Technical Author</td>
-                <td>San Francisco</td>
-                <td>66</td>
-                <td>2009/01/12</td>
-                <td>$86,000</td>
+                <td>Krutang Desai</td>
+                <td><a href="krutangdesai458.github.io">krutangdesai458.github.io</a></td>
+                <td>Information Technology</td>
+                <td>4</td>
+                <td>-</td>
+                <td>-</td>
             </tr>
             <tr>
-                <td>Cedric Kelly</td>
-                <td>Senior Javascript Developer</td>
-                <td>Edinburgh</td>
-                <td>22</td>
-                <td>2012/03/29</td>
-                <td>$433,060</td>
+                <td>Maitri Thakkar</td>
+                <td><a href="maitri17.github.io">maitri17.github.io</a></td>
+                <td>Computer Engineering</td>
+                <td>6</td>
+                <td>-</td>
+                <td>-</td>
             </tr>
             <tr>
-                <td>Airi Satou</td>
-                <td>Accountant</td>
-                <td>Tokyo</td>
-                <td>33</td>
-                <td>2008/11/28</td>
-                <td>$162,700</td>
+                <td>Yash Patel</td>
+                <td><a href="yash7272.github.io/portfolio-single.html">yash7272.github.io</a></td>
+                <td>Computer Engineering</td>
+                <td>4</td>
+                <td>-</td>
+                <td>-</td>
             </tr>
-            <tr>
-                <td>Brielle Williamson</td>
-                <td>Integration Specialist</td>
-                <td>New York</td>
-                <td>61</td>
-                <td>2012/12/02</td>
-                <td>$372,000</td>
+           <tr>
+                <td>Shah Vivek</td>
+                <td><a href="vivek-97.github.io">vivek-97.github.io</a></td>
+                <td>Computer Engineering</td>
+                <td>4</td>
+                <td>-</td>
+                <td>-</td>
             </tr>
-            <tr>
+            <!--<tr>
                 <td>Herrod Chandler</td>
                 <td>Sales Assistant</td>
                 <td>San Francisco</td>
@@ -475,16 +481,33 @@
                 <td>27</td>
                 <td>2011/01/25</td>
                 <td>$112,000</td>
-            </tr>
+            </tr>-->
         </tbody>
     </table>
-    </div>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-        <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+</div>
         <script>
         $(document).ready(function(){
             $('#example').DataTable();
         });
     </script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<!--<script>
+$(document).ready(function() {
+    $('tr').each(function(){
+        $(this).find('td').each(function(){
+            var  t = $(this).text().replace(/\s+|\t/g,"")
+            if( t.includes('http://amzn.to/')){
+                $(this).html("<a href='"+t+"' class='btn btn-primary' target='_blank'>Purchase Now</a>")
+            }else if(t.includes('http://www.arcobotics.com/') ){
+                $(this).html("<a href='"+t+"' class='btn btn-success' target='_blank'>Learn More</a>")
+            }
+        })
+    })
+    $('#example').DataTable();
+});-->
+</script>
 </body>
 </html>
