@@ -49,8 +49,12 @@ body {
 
 ol, ul {
   margin: 0;
+  /*font-family: 'Amatic SC', cursive;
+  font-family: 'Poiret One', cursive;*/
+  font-family: 'Josefin Slab', serif;
   padding: 0;
   list-style: none;
+  font-weight: 600;
 }
 
 select {
@@ -84,7 +88,7 @@ a, a:focus, a:hover {
 .btn.focus:active,
 .btn:active:focus,
 .btn:focus {
-  text-decoration: none;
+  text-decoration: line-through;
   outline: 0;
 }
 
@@ -103,7 +107,7 @@ a, a:focus, a:hover {
 }
 
 .gray-bg {
-  background: #f9f9ff;
+  background: #f9f9ff;  
 }
 
 h1, h2, h3,
@@ -115,7 +119,24 @@ h4, h5, h6 {
   margin-top: 0;
   font-weight: 600;
 }
-
+.containered h1{
+  /*font-family: 'IM Fell French Canon SC', serif;
+  font-family: 'Poiret One', cursive;*/
+  font-family: 'Josefin Slab', serif;
+  font-weight: 600;
+  color: black;
+  font-size: 35px;
+}
+.containered p{
+ /* font-family: 'IM Fell French Canon SC', serif;
+ font-family: 'Poiret One', cursive;*/
+ font-family: 'Josefin Slab', serif;
+  color: white; 
+  font-weight: 600;
+  text-transform: capitalize; 
+  font-size: 20px;
+  
+}
 .h1, .h2, .h3,
 .h4, .h5, .h6 {
   margin-bottom: 0;
@@ -703,7 +724,7 @@ td, th {
   bottom: 0;
 }
 
-.container.fullwidth {
+.container {
   width: 100%;
 }
 
@@ -711,7 +732,13 @@ td, th {
   padding-left: 0;
   padding-right: 0;
 }
-
+.containered {
+  width: 100%;
+}
+.containered.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
 .no-padding {
   padding: 0;
 }
@@ -916,6 +943,7 @@ td, th {
   align-items: center;
 }
 
+
 @media (max-width: 767px) {
   .default-header nav .main-menu {
     display: none;
@@ -940,8 +968,8 @@ td, th {
   text-decoration: none;
   color: #00ff8c;
 }
-.default-header nav #main-menu a:active{
-  
+.default-header nav .main-menu a:active{
+  background-color:#00ff8c 
   text-decoration: line-through;
 }
 
@@ -962,7 +990,7 @@ td, th {
     position: absolute;
     top: 40px;
     right: 0;
-    background: linear-gradient(to right, rgba(143, 60, 117, 0.95) 0%, rgba(74, 24, 148, 0.89) 100%);
+    background: linear-gradient(to right, rgba(255, 105, 0, 1.83) 0%, rgba(255, 255, 255, 1.43) 100%);
     padding: 30px 20px;
   }
   .default-header .main-menu a {
@@ -984,7 +1012,7 @@ td, th {
 .is-sticky .sticky-header {
   background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
   background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
-  background: linear-gradient(to right, rgba(143, 60, 117, 0.95) 0%, rgba(74, 24, 148, 0.89) 100%);
+  background: linear-gradient(to right, rgba(228, 115, 36, 1.00) 0%, rgba(228, 115, 36, 1.00) 100%);
 }
 
 .search {
@@ -1109,7 +1137,7 @@ td, th {
 .banner-area .overlay-bg {
   background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
   background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
-  background: linear-gradient(to right, rgba(143, 60, 117, 0.95) 0%, rgba(74, 24, 148, 0.89) 100%);
+  background: linear-gradient(to right, rgba(255, 105, 0, 0.83) 0%, rgba(255, 255, 255, 0.43) 100%);
 }
 
 .signle-service {
@@ -1220,7 +1248,7 @@ td, th {
 .single-filter-content .overlay-bg-content {
   background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
   background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
-  background: linear-gradient(to right, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
+  background: linear-gradient(to right, rgba(255, 105, 0, 0.83) 0%, rgba(255, 255, 255, 0.43) 100%);
   text-align: center;
   padding: 50px 100px;
   opacity: 0;
@@ -1287,7 +1315,9 @@ td, th {
   background-size: cover !important;
   height: 300px;
 }
-
+.studio-content p{
+  font-size: 20px;
+}
 /*.single-member .thumb .overlay-member {
   background: -moz-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
   background: -webkit-linear-gradient(left, rgba(60, 64, 143, 0.95) 0%, rgba(91, 97, 207, 0.95) 100%);
@@ -1343,9 +1373,21 @@ td, th {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 150px;
-  border: 1px solid black;
+  border: 10px solid green;
   padding: 50px 50px; 
-  background-color: #E2A9F3;
+  background :#201D1D;
+  font-size: 44px;
+  /*font-family: 'Bad Script', cursive;*/
+  font-family: 'Fredericka the Great', cursive;
+  
+}
+.boxed h2{
+  font-size: 44px;
+  font-weight: 500;
+  color:white;
+}
+.boxed p{
+  text-decoration: none;
 }
 .box{
   margin:0px 50px;
@@ -1386,9 +1428,10 @@ td, th {
   content: "";
   left: 0;
   top: 0;
+    border: 1px solid black;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to right, rgba(143, 60, 117, 0.95) 0%, rgba(74, 24, 148, 0.89) 100%);
+  background-color: white;
   z-index: 2;
 }
 
@@ -1398,13 +1441,16 @@ td, th {
     width: 100%;
   }
 }
-
+.xyz{
+  text-align: center;
+}
 .studio-area:after {
   position: absolute;
   content: "";
   right: 0;
   top: 0;
   width: 50%;
+
   height: 100%;
   background: url(../img/studio-bg.jpg) no-repeat center center/cover;
   z-index: 1;
@@ -1418,6 +1464,8 @@ td, th {
 
 .single-pricing-table {
   margin-top: 30px;
+}.xyz{
+  text-align: center;
 }
 
 .single-pricing-table .top {
@@ -1567,14 +1615,15 @@ td, th {
 }
 
 .cta-area {
-  background: linear-gradient(to right, rgba(143, 60, 117, 0.95) 0%, rgba(74, 24, 148, 0.89) 100%);
+ background: linear-gradient(to right, rgba(228, 115, 36, 1.00) 0%, rgba(228, 115, 36, 1.00) 100%);
   padding: 30px 0;
-  border:solid 1px linear-gradient(to right, rgba(143, 60, 117, 0.95) 0%, rgba(74, 24, 148, 0.89) 100%);
- }
+  background: linear-gradient(to right, rgba(228, 115, 36, 1.00) 0%, rgba(228, 115, 36, 1.00) 100%);
+}
  .cta-area h5{
   font-size: 30px;
   text-transform: capitalize;
   color: #FFFAF0;
+  font-family: 'IM Fell French Canon SC', serif;
  }
 
 @media (max-width: 767px) {
