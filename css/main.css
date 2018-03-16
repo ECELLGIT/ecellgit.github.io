@@ -1131,7 +1131,11 @@ td, th {
 }
 
 .banner-area {
-  background: url(../img/banner.jpg) repeat-x;
+  background: url(../img/banner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-siz: cover;
+  background-size: cover;
 }
 
 .banner-area .overlay-bg {
@@ -1464,12 +1468,14 @@ td, th {
 }
 @media (max-width: 600px){
 .banner-area {
-  background: url(../img/banner.jpg) repeat-x;
+  background: url(../img/banner.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 }
 @media (min-width: 601px){
 .banner-area {
-  background: url(../img/banner.jpg) repeat-x;
+  background: url(../img/banner.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 }
 @media (max-width: 991px) {
