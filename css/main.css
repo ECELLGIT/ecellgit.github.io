@@ -1131,7 +1131,7 @@ td, th {
 }
 
 .banner-area {
-  background: url(../img/banner.jpg) no-repeat center center/cover;
+  background: url(../img/banner.jpg) repeat-x;
 }
 
 .banner-area .overlay-bg {
@@ -1437,7 +1437,7 @@ td, th {
 
 @media (max-width: 991px) {
   .studio-area:before {
-    background: rgba(64, 69, 152, 0.95);
+    background-color: white;
     width: 100%;
   }
 }
@@ -1455,7 +1455,23 @@ td, th {
   background: url(../img/studio-bg.jpg) no-repeat center center/cover;
   z-index: 1;
 }
-
+@media (max-width: 480px){
+  .boxed h2{
+  font-size: 30px;
+  font-weight: 500;
+  color:white;
+}
+}
+@media (max-width: 600px){
+.banner-area {
+  background: url(../img/banner.jpg) repeat-x;
+}
+}
+@media (min-width: 601px){
+.banner-area {
+  background: url(../img/banner.jpg) repeat-x;
+}
+}
 @media (max-width: 991px) {
   .studio-area:after {
     width: 100%;
@@ -1629,7 +1645,6 @@ td, th {
 @media (max-width: 767px) {
   .cta-area .primary-btn {
     margin-top: 10px;
-
   }
 }
 
